@@ -1,0 +1,14 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+ <application android:theme="@style/EdgeOSTheme" android:label="EDGEOS" android:icon="@drawable/ic_edgeos" android:allowBackup="false" android:supportsRtl="true">
+  <activity android:name=".SettingsActivity" android:exported="true">
+   <intent-filter>
+    <action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/>
+   </intent-filter>
+  </activity>
+  <activity android:name=".HomeActivity" android:exported="true" android:screenOrientation="portrait">
+   <intent-filter>
+    <action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.HOME"/><category android:name="android.intent.category.DEFAULT"/>
+   </intent-filter>
+  </activity>
+ </application>
+</manifest>
