@@ -1,0 +1,21 @@
+<resources>
+    <style name="EdgeOSTheme" parent="android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:colorAccent">#FFFFFF</item>
+        <item name="android:navigationBarColor">#000000</item>
+        <item name="android:statusBarColor">#00000000</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+    <style name="EdgeOSControlCenterTheme" parent="@android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:colorAccent">#202124</item>
+        <item name="android:navigationBarColor">#F2F2F7</item>
+        <item name="android:statusBarColor">#F2F2F7</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>
