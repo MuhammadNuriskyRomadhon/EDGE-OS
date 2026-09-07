@@ -1,5 +1,0 @@
-package com.edgeos.m1;
-import android.app.*;import android.os.*;import android.content.*;import android.provider.Settings;import android.view.*;import android.widget.*;
-public class SettingsActivity extends Activity{
- public void onCreate(Bundle b){super.onCreate(b); LinearLayout l=new LinearLayout(this);l.setOrientation(LinearLayout.VERTICAL);l.setPadding(32,48,32,32); TextView t=new TextView(this);t.setText("EDGEOS\nMilestone 1");t.setTextSize(28);t.setPadding(0,0,0,40);l.addView(t);Button h=new Button(this);h.setText("Pilih EDGEOS sebagai Home Launcher");h.setOnClickListener(v->{try{startActivity(new Intent(Settings.ACTION_HOME_SETTINGS));}catch(Exception e){startActivity(new Intent(Settings.ACTION_SETTINGS));}});l.addView(h);TextView info=new TextView(this);info.setText("Foundation launcher: app discovery, grid, dock, swipe pages, launch apps, wallpaper, persistence, package updates.\n\nM1 belum mencakup Liquid Glass, widgets, Control Center, Notification Center, Spotlight, App Library, Dynamic Island, atau AssistiveTouch. Fitur tersebut masuk milestone berikutnya.");info.setPadding(0,32,0,0);l.addView(info);setContentView(l);}
-}
