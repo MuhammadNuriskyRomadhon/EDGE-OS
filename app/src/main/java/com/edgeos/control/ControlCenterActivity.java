@@ -1,6 +1,7 @@
 package com.edgeos.control;
 
 import android.app.Activity;
+import android.graphics.Typeface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.media.AudioManager;
@@ -34,7 +35,7 @@ public final class ControlCenterActivity extends Activity {
         title.setTextSize(25);
         title.setTextColor(Color.rgb(25,25,28));
         title.setGravity(Gravity.CENTER_VERTICAL);
-        title.setTypeface(null, 1);
+        title.setTypeface(null, Typeface.BOLD);
         root.addView(title, new LinearLayout.LayoutParams(-1, dp(56)));
 
         TextView note = new TextView(this);
