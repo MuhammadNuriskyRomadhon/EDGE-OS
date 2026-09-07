@@ -1,0 +1,1 @@
+package com.edgeos.launcher; import android.graphics.drawable.Drawable; public class AppInfo { public final String label,pkg; public final Drawable icon; public AppInfo(String l,String p,Drawable i){label=l;pkg=p;icon=i;} }

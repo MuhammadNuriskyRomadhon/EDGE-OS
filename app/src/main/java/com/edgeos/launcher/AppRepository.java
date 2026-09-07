@@ -1,0 +1,3 @@
+package com.edgeos.launcher;
+import android.content.*;import android.content.pm.*;import java.util.*;
+public final class AppRepository { private AppRepository(){} public static ArrayList<AppInfo> load(Context c){Intent q=new Intent(Intent.ACTION_MAIN);q.addCategory(Intent.CATEGORY_LAUNCHER);PackageManager pm=c.getPackageManager();ArrayList<AppInfo> out=new ArrayList<>();HashSet<String> seen=new HashSet<>();for(ResolveInfo r:pm.queryIntentActivities(q,0)){String p=r.activityInfo.packageName;if(p.equals(c.getPackageName())||!seen.add(p))continue;out.add(new AppInfo(r.loadLabel(pm).toString(),p,r.loadIcon(pm)));}Collections.sort(out,(a,b)->a.label.compareToIgnoreCase(b.label));return out;} }

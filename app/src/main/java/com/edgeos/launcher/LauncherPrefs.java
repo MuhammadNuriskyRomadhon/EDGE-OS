@@ -1,0 +1,1 @@
+package com.edgeos.launcher; import android.content.*; public final class LauncherPrefs {static final String P="edgeos";private LauncherPrefs(){} public static boolean dark(Context c){return c.getSharedPreferences(P,0).getBoolean("dark",true);} public static void setDark(Context c,boolean v){c.getSharedPreferences(P,0).edit().putBoolean("dark",v).apply();}}
